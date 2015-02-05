@@ -35,7 +35,12 @@
 (unless (server-running-p)
   (server-start))
 
+(require 'darwin-style)
 (require 'llvm-mode)
 (require 'tablegen-mode)
 
+(column-number-mode)
+
 (cua-mode t)
+
+(add-to-list 'auto-mode-alist '("\\.metal\\'" . c++-mode))
