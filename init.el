@@ -44,3 +44,4 @@
 (cua-mode t)
 
 (add-to-list 'auto-mode-alist '("\\.metal\\'" . c++-mode))
+(add-to-list 'auto-mode-alist '("\\.mm\\'" . objc-mode))
