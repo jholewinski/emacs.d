@@ -48,3 +48,7 @@
 
 (add-to-list 'auto-mode-alist '("\\.metal\\'" . c++-mode))
 (add-to-list 'auto-mode-alist '("\\.mm\\'" . objc-mode))
+
+(load-theme 'manoj-dark)
+;; (load-theme 'misterioso)
+;; (load-theme 'tsdh-dark)
