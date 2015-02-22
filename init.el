@@ -35,10 +35,16 @@
 (unless (server-running-p)
   (server-start))
 
+(require 'darwin-style)
 (require 'llvm-mode)
 (require 'tablegen-mode)
+
+(column-number-mode)
 
 (cua-mode t)
 
 (autoload 'rust-mode "rust-mode" nil t)
 (add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode))
+
+(add-to-list 'auto-mode-alist '("\\.metal\\'" . c++-mode))
+(add-to-list 'auto-mode-alist '("\\.mm\\'" . objc-mode))
